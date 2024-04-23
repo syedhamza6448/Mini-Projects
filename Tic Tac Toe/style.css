@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #49416D;
+    color: #F18F01;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 70px;
+}
+p {
+    color: #E08d79;
+    font-weight: 700;
+    font-size: 44px;
+    cursor: pointer;
+}
+p:hover {
+    text-shadow: 2px 2px 5px #B3F2DD;
+}
+h1 {
+    margin-bottom: 50px;
+    animation: slidein 10s  0 infinite ease-in-out;
+    cursor: default;
+    animation: slidein 5s linear infinite;
+}
+.container {
+    height: 70vh;
+}
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: 5px solid #A882DD;
+    box-shadow: 0 0 1rem rgba(224, 141, 121, 0.5);
+    background-color: rgb(224, 141, 121);
+    color: #E0EFDE;
+    font-size: 12vmin;
+    cursor: pointer;
+}
+.box:hover {
+    box-shadow: 5px 5px 10px rgb(224, 141, 121);
+}
+#reset {
+    padding: 1rem;
+    background-color: #A882DD;
+    border: 5px solid #B3F2DD;
+    border-radius: 3px;
+    color: #B3F2DD;
+    cursor: pointer;
+}
+#reset:hover {
+    box-shadow:5px 5px 10px #A882DD,
+    -5px -5px 10px #A882DD;
+}
+#new-btn {
+    padding: 1rem;
+    background-color: #A882DD;
+    border: 5px solid #B3F2DD;
+    border-radius: 3px;
+    color: #B3F2DD;
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+#new-btn:hover {
+    box-shadow:5px 5px 10px #A882DD,
+    -5px -5px 10px #A882DD;
+}
+.msg-container {
+    height: 100vmin;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hide {
+    display: none;
+}
+@keyframes slidein {
+    0% {
+      transform: translateX(-100%);
+    }
+    50% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
