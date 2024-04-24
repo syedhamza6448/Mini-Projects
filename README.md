@@ -14,6 +14,17 @@ The first project in this repository is a classic Tic-Tac-Toe game built with HT
 - Draw detection
 - Reset and new game buttons
 
+### 2. Rock Paper Scissors Game
+
+This project is a classic Rock Paper Scissors game where you compete against the computer. The game keeps track of your score and the computer's score on the scoreboard. Choose your move and see if you can outsmart the computer!
+
+**Features:**
+- Single-player game mode against the computer
+- Score tracking on the scoreboard
+- User-friendly interface
+
+**Note:** Both games are responsive, but they are optimized for desktop usage. While you can play them on mobile devices, the experience may be better on desktop.
+
 ### More Projects Coming Soon!
 
 I plan to add more mini-projects to this repository as I continue learning and exploring different programming concepts and technologies. Stay tuned for updates!
@@ -23,13 +34,6 @@ I plan to add more mini-projects to this repository as I continue learning and e
 To run any of the projects locally, follow these steps:
 
 1. Clone the repository to your local machine:
-
-2. Navigate to the project directory you want to run.
-
-3. Open the `index.html` file in your preferred web browser.
-
-Alternatively, you can use a local development server like Live Server (VS Code extension) or serve the project using a simple HTTP server like Python's `http.server` module or Node.js's `http-server` package.
-
-## Acknowledgments
-
-I would like to thank the open-source community for providing valuable resources, tutorials, and inspiration for these mini-projects. Special thanks to the creators of the technologies used in each project.
+   
+   ```bash
+   git clone https://github.com/syedhamza6448/Mini-Projects.git
