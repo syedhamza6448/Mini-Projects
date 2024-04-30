@@ -73,6 +73,7 @@ updateDisplay();
 function updateDisplay() {
     const display = document.getElementById('display');
     display.textContent = displayValue;
+    
     if (displayValue === '69') {
         display.textContent += ' 😏';
     }
