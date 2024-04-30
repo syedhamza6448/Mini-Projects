@@ -73,8 +73,6 @@ updateDisplay();
 function updateDisplay() {
     const display = document.getElementById('display');
     display.textContent = displayValue;
-
-    // Check if the result is 69 and add emoji if true
     if (displayValue === '69') {
         display.textContent += ' 😏';
     }
