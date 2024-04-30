@@ -13,27 +13,26 @@
 <body>
     <main>
         <div id="calculator-container">
-            <div class="display">
-                1126
+            <div class="display" id="display">
+                0
             </div>
-                <div class="buttons">
-                    <button class="number">1</button>
-                    <button class="number">2</button>
-                    <button class="number">3</button>
-                    <button class="operator"><i class="fa-solid fa-plus"></i></button>
-                    <button class="number">4</button>
-                    <button class="number">5</button>
-                    <button class="number">6</button>
-                    <button class="operator"><i class="fa-solid fa-minus"></i></button>
-                    <button class="number">7</button>
-                    <button class="number">8</button>
-                    <button class="number">9</button>
-                    <button class="operator"><i class="fa-solid fa-xmark"></i></button>
-                    <button class="number">0</button>
-                    <button class="operator"><i class="fa-solid fa-divide"></i></button>
-                    <button class="operator"><i class="fa-solid fa-equals" style="color: #7be072;"></i></button>
-                    <button class="operator" style="color: #e0b472; font-size: larger;">AC</button>
-                </div>
+            <div class="buttons">
+                <button class="number" onclick="appendNumber('1')">1</button>
+                <button class="number" onclick="appendNumber('2')">2</button>
+                <button class="number" onclick="appendNumber('3')">3</button>
+                <button class="operator operator-plus" onclick="appendOperator('+')"><i class="fa-solid fa-plus"></i></button>
+                <button class="number" onclick="appendNumber('4')">4</button>
+                <button class="number" onclick="appendNumber('5')">5</button>
+                <button class="number" onclick="appendNumber('6')">6</button>
+                <button class="operator operator-minus" onclick="appendOperator('-')"><i class="fa-solid fa-minus"></i></button>
+                <button class="number" onclick="appendNumber('7')">7</button>
+                <button class="number" onclick="appendNumber('8')">8</button>
+                <button class="number" onclick="appendNumber('9')">9</button>
+                <button class="operator operator-times" onclick="appendOperator('*')"><i class="fa-solid fa-xmark"></i></button>
+                <button class="number" onclick="appendNumber('0')">0</button>
+                <button class="operator operator-divide" onclick="appendOperator('/')"><i class="fa-solid fa-divide"></i></button>
+                <button class="operator operator-equals" id="equals" onclick="calculate()"><i class="fa-solid fa-equals" style="color: #7be072;"></i></button>
+                <button class="operator operator-clear" id="clear" style="color: #e0b472; font-size: larger;" onclick="clearDisplay()">AC</button>
             </div>
         </div>
     </main>
