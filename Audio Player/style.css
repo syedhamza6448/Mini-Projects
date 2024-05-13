@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Ubuntu Sans Mono", monospace;
+}
+body {
+    background-color: #0A2E36;
+}
+
+header {
+    text-align: center;
+    width: 100vw;
+    height: 7vh;
+    background-color: #14CC60;
+    color: #2B2C28;
+}
+header h1 {
+    padding: 1rem, 0;
+    position: relative;
+    top: .5rem;
+    font-size: 3rem;
+    transition: all 0.5s ease;
+}
+header h1:hover {
+    color: rgba(43, 44, 40, 0.75);
+    cursor: pointer;
+    scale: 1.1;
+    transition: all 0.5s ease;
+}
+main {
+    margin-top: 6rem;
+    margin-left: 30rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.cover-and-disk {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.cover {
+    width: 600px;
+    height: 600px;
+    border-radius: 10px;
+    position: relative;
+    background-color: #27FB6B;
+    background-image: url(media/mosaic-2790344_1280.png);
+    background-size: contain;
+    background-position: center;
+    z-index: 100;
+}
+.disk {
+    width: 550px;
+    height: 550px;
+    border-radius: 50%;
+    position: relative;
+    left: -350px;
+    background: linear-gradient(#14CC60, #036D19);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease;
+}
+.inner-circles {
+    border: 6px double #0A2E36;
+}
+.c1 {
+    height: 250px;
+    width: 250px;
+    position: fixed;
+    border-radius: 50%;
+    background-image: url(media/Cover-image.jpg);
+    border: 3px solid #0A2E36;
+}
+.c2 {
+    height: 500px;
+    width: 500px;
+    position: fixed;
+    border-radius: 50%;
+}
+.c3 {
+    height: 375px;
+    width: 375px;
+    position: fixed;
+    border-radius: 50%;
+}
+.disk:hover {
+    left: -100px;
+    transition: all 1s ease;
+    animation: disk-rotation 5s linear infinite;
+}
+@keyframes disk-rotation {
+    0% { 
+        rotate: -360deg;
+    }
+    100% {
+        rotate: 360deg;
+    }
+}
